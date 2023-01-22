@@ -1,0 +1,131 @@
+/* Add a background color to the body */
+/* Add a fade-in animation to the website when it loads */
+body {
+  background-color: rgb(158, 158, 179); /* sets the background color to navy */;
+  animation: fadein 1s;
+}
+
+/* Add a hover animation to the buttons */
+button {
+  animation: hover-animation 0.5s;
+}
+
+/* Change the color of the button on hover */
+button:hover {
+  background-color: #181269ab;
+  color: white;
+}
+
+/* Change the color of the button on click */
+button:active {
+  background-color: #e7eb18;
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover animation keyframes */
+@keyframes hover-animation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Center the container and set a max-width */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Style the form elements */
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 10px;
+  display:contents;
+  margin-bottom: 10px;
+}
+
+form input, form select {
+  font-size: 1.2em;
+  padding: -5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+form input[type="number"] {
+  width: 80px;
+}
+
+form button {
+  background-color: rgb(46, 43, 43);  color:#665656;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Style the password container */
+.password-container {
+  background-color: #665656;
+  border-radius: 5px;
+  border: none;
+  padding-left: -20px;
+}
+
+/* Style the password display and copy button */
+#password-display {
+  width: 40%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgb(158, 158, 179); /* sets the background color to navy */
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: rgb(46, 43, 43);
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 85px;
+  border: none;
+  border-radius: px;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(46, 43, 43); /* sets the background color to navy */
+  display: flex; /* centers the element horizontally and vertically */
+  align-items: center; /* centers the element vertically */
+  justify-content: center; /* centers the element horizontally */
+  min-height: 100vh; /* sets the minimum height to the full viewport height */
+  margin: 0; /* removes the default margin */
+  border: none;
+  
+}
+
+.box {
+  background-color: #91aa22; /* sets the background color of the box */
+  padding: 20px; /* adds padding to the box */
+  border: solid 2px black; /* adds a border to the box */
+  border-radius: 10px;
+  width: 80%; /* sets the width of the box */
+  max-width: 400px; /* limits the maximum width of the box */
+  text-align: center; /* centers the text in the box */
+  box-shadow: 0px 0px 10px 0px rgba(5, 4, 15, 0.95); /* this adds the shadow effect */
+}
